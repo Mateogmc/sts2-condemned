@@ -19,7 +19,7 @@ namespace Condemned.CondemnedCode.Cards.Rare;
 
 public class ChosenDestiny : CondemnedCard
 {
-    public ChosenDestiny() : base(2, CardType.Skill, CardRarity.Rare, TargetType.Self)
+    public ChosenDestiny() : base(3, CardType.Skill, CardRarity.Rare, TargetType.Self)
     {
         WithKeyword(CondemnedKeywords.Brittle);
         WithCostUpgradeBy(-1);

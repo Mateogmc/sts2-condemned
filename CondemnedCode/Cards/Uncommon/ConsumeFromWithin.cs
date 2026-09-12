@@ -9,11 +9,11 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Condemned.CondemnedCode.Cards.Uncommon;
 
-public class ConsumeFromInside : CondemnedCard
+public class ConsumeFromWithin : CondemnedCard
 {
-    public ConsumeFromInside() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+    public ConsumeFromWithin() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
     {
-        WithPower<ConsumeFromInsidePower>(6, 2);
+        WithPower<ConsumeFromWithinPower>(6, 2);
         WithTip(typeof(JinxPower));
     }
     
@@ -21,6 +21,6 @@ public class ConsumeFromInside : CondemnedCard
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.Apply<ConsumeFromInsidePower>(choiceContext, Owner.Creature, this, DynamicVars.Power<ConsumeFromInsidePower>().BaseValue);
+        await CommonActions.Apply<ConsumeFromWithinPower>(choiceContext, Owner.Creature, this, DynamicVars.Power<ConsumeFromWithinPower>().BaseValue);
     }
 }

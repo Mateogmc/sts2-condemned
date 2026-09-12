@@ -28,7 +28,7 @@ public class Patience : CondemnedCard
         int amount = DynamicVars["RetainCards"].IntValue;
 
         foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner,
-                     new CardSelectorPrefs(SelectionScreenPrompt, amount), null, this))
+                     new CardSelectorPrefs(SelectionScreenPrompt, amount), c => !c.Keywords.Contains(CardKeyword.Retain), this))
         {
             card.AddKeyword(CardKeyword.Retain);
             CondemnedKeywordModel.TriggerCardKeywordsModified(this);

@@ -18,6 +18,7 @@ public class MorallySuperior : CondemnedCard
         WithDamage(6, 3);
         WithVar("ConsumedJinx", 1, 1);
         WithTip(typeof(JinxPower));
+        WithTip(typeof(WeakPower));
     }
     
     protected override async Task OnPlay(

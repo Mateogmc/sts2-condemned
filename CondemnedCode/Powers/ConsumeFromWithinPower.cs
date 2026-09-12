@@ -10,13 +10,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Models;
 
 namespace Condemned.CondemnedCode.Powers
 {
-public class ConsumeFromInsidePower : CondemnedPower
+public class ConsumeFromWithinPower : CondemnedPower
     {
-        public override PowerType Type => PowerType.Debuff;
+        public override PowerType Type => PowerType.Buff;
         public override PowerStackType StackType => PowerStackType.Counter;
+        
+        private CardModel? _source;
+        
+        public override Task AfterApplied(Creature? applier, CardModel? cardSource)
+        {
+            _source = cardSource;
+            
+            return Task.CompletedTask;
+        }
 
         public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
         {
@@ -29,14 +39,14 @@ public class ConsumeFromInsidePower : CondemnedPower
                 
                 if (jinxAmount <= 0) continue;
 
-                await CommonActions.Apply<JinxPower>(choiceContext, creature, null, -1);
+                await CommonActions.Apply<JinxPower>(choiceContext, creature, _source, -1);
                 
                 await CreatureCmd.Damage(
                     new ThrowingPlayerChoiceContext(),
                     creature,
                     Amount,
                     ValueProp.Unpowered,
-                    null,
+                    _source,
                     null
                 );
             }

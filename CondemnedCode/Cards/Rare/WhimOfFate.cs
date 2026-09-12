@@ -112,7 +112,7 @@ public class WhimOfFate : CondemnedCard
             CondemnedKeywordModel.TriggerCardKeywordsModified(this);
 
             chosenEffect.Apply(card);
-            CardCmd.Preview(card, 0.4f);
+            CardCmd.Preview(card, 1f);
             await Cmd.Wait(0.6f);
         }
     }
