@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://cwvnqi8cpmpq1"]
+
+[ext_resource type="Shader" uid="uid://dbnx7uotu5tci" path="res://Shaders/brittle_frame_shader.gdshader" id="1_x0a0y"]
+[ext_resource type="Texture2D" uid="uid://dxvnxy2s4ywso" path="res://Shaders/brittle_frame_mask.png" id="2_21l4h"]
+
+[resource]
+shader = ExtResource("1_x0a0y")
+shader_parameter/mask_texture = ExtResource("2_21l4h")
+shader_parameter/threshold = 0.42800002033
+shader_parameter/edge_thickness = 0.30000001192093

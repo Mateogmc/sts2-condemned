@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwbpqfbdnbkvl"]
+
+[ext_resource type="Material" uid="uid://cwvnqi8cpmpq1" path="res://Shaders/brittle_frame_material.tres" id="1_84qdj"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(96, 79)
+
+[node name="BrittleRect" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 300.0
+offset_bottom = 422.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="BrittleRect"]
+material = ExtResource("1_84qdj")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

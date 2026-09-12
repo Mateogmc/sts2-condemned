@@ -1,0 +1,14 @@
+{
+  "CONDEMNED-FORETELL.description": "When shuffling the discard deck, if this card was not drawn, draw it.",
+  "CONDEMNED-FORETELL.title": "Foretell",
+  "CONDEMNED-SLEIGHT.description": "When this card is drawn, draw [blue]1[/blue] card",
+  "CONDEMNED-SLEIGHT.title": "Sleight",
+  "CONDEMNED-BRITTLE.description": "When this card is used, remove from battle. \n[red]This keyword can not be manipulated.[/red]",
+  "CONDEMNED-BRITTLE.title": "Brittle",
+  "CONDEMNED-RECHARGE.description": "When this card is played, gain [gold]Energy[/gold].",
+  "CONDEMNED-RECHARGE.title": "Recharge",
+  "CONDEMNED-CURSED.description": "This card is a [red]Curse[/red] in addition to its natural [gold]Type[/gold].",
+  "CONDEMNED-CURSED.title": "Cursed",
+  "CONDEMNED-LOOPING.description": "At the start of your turn, this card goes to your hand.",
+  "CONDEMNED-LOOPING.title": "Looping"
+}

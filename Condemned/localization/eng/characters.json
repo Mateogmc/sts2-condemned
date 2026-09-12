@@ -1,0 +1,16 @@
+{
+  "CONDEMNED-CONDEMNED.aromaPrinciple": "[sine][color=#70696f]...my life... my fate... my choosing...[/color][/sine]",
+  "CONDEMNED-CONDEMNED.banter.alive.endTurnPing": "My [sine]patience[/sine] has its [jitter]LIMITS[/jitter].",
+  "CONDEMNED-CONDEMNED.banter.dead.endTurnPing": "...",
+  "CONDEMNED-CONDEMNED.cardsModifierDescription": "Condemned cards will now appear in rewards and shops.",
+  "CONDEMNED-CONDEMNED.cardsModifierTitle": "Condemned Cards",
+  "CONDEMNED-CONDEMNED.description": "A fugitive occultist from a distant village.\nHer chains do not limit her from rigging fate to live another day.",
+  "CONDEMNED-CONDEMNED.eventDeathPrevention": "I didn't come so far to perish here.",
+  "CONDEMNED-CONDEMNED.goldMonologue": "Could this much gold buy freedom?",
+  "CONDEMNED-CONDEMNED.possessiveAdjective": "her",
+  "CONDEMNED-CONDEMNED.pronounObject": "her",
+  "CONDEMNED-CONDEMNED.pronounPossessive": "hers",
+  "CONDEMNED-CONDEMNED.pronounSubject": "she",
+  "CONDEMNED-CONDEMNED.title": "The Condemned",
+  "CONDEMNED-CONDEMNED.titleObject": "The Condemned"
+}

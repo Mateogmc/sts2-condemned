@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6hqpbmi6p5v2"]
+
+[ext_resource type="Texture2D" uid="uid://cjkd8yybdp8mh" path="res://Condemned/images/charui/big_energy.png" id="1_7h75s"]
+[ext_resource type="Script" uid="uid://bwtbwf55b3fln" path="res://Condemned/scenes/vfx/TestVfx.cs" id="1_8xdar"]
+
+[sub_resource type="Animation" id="Animation_8xdar"]
+resource_name = "play"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(0.1, 0.1), Vector2(0.5, 0.5), Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="Animation" id="Animation_77fyx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wbdce"]
+_data = {
+&"RESET": SubResource("Animation_77fyx"),
+&"play": SubResource("Animation_8xdar")
+}
+
+[node name="TestVfx" type="Node2D"]
+scale = Vector2(20, 20)
+script = ExtResource("1_8xdar")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("1_7h75s")
+
+[node name="Play" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_wbdce")
+}

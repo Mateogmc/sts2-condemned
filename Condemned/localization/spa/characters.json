@@ -1,0 +1,16 @@
+{
+  "CONDEMNED-CONDEMNED.aromaPrinciple": "[sine][color=#70696f]...mi vida... mi destino... mi elección...[/color][/sine]",
+  "CONDEMNED-CONDEMNED.banter.alive.endTurnPing": "Mi [sine]paciencia[/sine] tiene un [jitter]LÍMITE[/jitter].",
+  "CONDEMNED-CONDEMNED.banter.dead.endTurnPing": "...",
+  "CONDEMNED-CONDEMNED.cardsModifierDescription": "Ahora las cartas de la Execrada aparecerán en las recompensas y tiendas.",
+  "CONDEMNED-CONDEMNED.cardsModifierTitle": "Cartas de la Execrada",
+  "CONDEMNED-CONDEMNED.description": "Una ocultista fugitiva de un pueblo distante.\nSus cadenas no le impiden manipular la suerte a su favor para vivir un día más.",
+  "CONDEMNED-CONDEMNED.eventDeathPrevention": "No he llegado tan lejos para caer aquí.",
+  "CONDEMNED-CONDEMNED.goldMonologue": "¿Podría todo este oro comprar la libertad?",
+  "CONDEMNED-CONDEMNED.possessiveAdjective": "su",
+  "CONDEMNED-CONDEMNED.pronounObject": "a ella",
+  "CONDEMNED-CONDEMNED.pronounPossessive": "suya",
+  "CONDEMNED-CONDEMNED.pronounSubject": "ella",
+  "CONDEMNED-CONDEMNED.title": "La Execrada",
+  "CONDEMNED-CONDEMNED.titleObject": "La Execrada"
+}

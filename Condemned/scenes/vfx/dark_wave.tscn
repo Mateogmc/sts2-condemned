@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bednif0xu0rbi"]
+
+[ext_resource type="Texture2D" uid="uid://lswwsvrjobkl" path="res://Condemned/images/particles/wave_particle.png" id="1_6vh6y"]
+
+[sub_resource type="Gradient" id="Gradient_ya78o"]
+offsets = PackedFloat32Array(0.24528302, 0.6415094, 1)
+colors = PackedColorArray(0.5568628, 0, 0.5921569, 1, 1, 0, 1, 1, 1, 0, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b4job"]
+gradient = SubResource("Gradient_ya78o")
+
+[sub_resource type="Curve" id="Curve_cnudm"]
+_data = [Vector2(0.030303031, 0), 0.0, 0.0, 0, 0, Vector2(0.49242425, 0.46067423), 1.052555, 1.052555, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_3tw26"]
+curve = SubResource("Curve_cnudm")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_pvsfi"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 0, 0)
+scale_min = 40.0
+scale_max = 40.0
+scale_curve = SubResource("CurveTexture_3tw26")
+color_ramp = SubResource("GradientTexture1D_b4job")
+
+[node name="DarkWave" type="Node2D"]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = true
+amount = 1
+texture = ExtResource("1_6vh6y")
+one_shot = true
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_pvsfi")

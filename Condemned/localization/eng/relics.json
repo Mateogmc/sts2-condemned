@@ -1,0 +1,9 @@
+{
+  "CONDEMNED-CURSED_EYE.description": "At the start of combat, add an [red]Obsession[/red] to your hand.",
+  "CONDEMNED-CURSED_EYE.flavor": "A curse or a blessing?",
+  "CONDEMNED-CURSED_EYE.title": "Cursed Eye",
+  "CONDEMNED-BLESSED_EYE.description": "At the start of combat, add an [green]Obsession+[/green] to your hand.",
+  "CONDEMNED-BLESSED_EYE.flavor": "An actual blessing.",
+  "CONDEMNED-BLESSED_EYE.title": "Blessed Eye",
+  "SEA_GLASS.CONDEMNED-CONDEMNED.title": "Cursed Glass"
+}

@@ -1,0 +1,14 @@
+{
+  "CONDEMNED-FORETELL.description": "Al barajar la pila de descartes, si no ha sido robada, roba esta carta.",
+  "CONDEMNED-FORETELL.title": "Adivinar",
+  "CONDEMNED-SLEIGHT.description": "Al robar esta carta, roba [blue]1[/blue] carta más.",
+  "CONDEMNED-SLEIGHT.title": "Juego de Manos",
+  "CONDEMNED-BRITTLE.description": "Al jugar esta carta, es eliminada del combate. \n[red]Esta palabra clave no puede ser manipulada.[/red]",
+  "CONDEMNED-BRITTLE.title": "Endeble",
+  "CONDEMNED-RECHARGE.description": "Al jugar esta carta se obtiene [gold]Energía[/gold].",
+  "CONDEMNED-RECHARGE.title": "Recarga",
+  "CONDEMNED-CURSED.description": "Además de su [gold]Tipo[/gold] natural, esta carta es una [red]Maldición[/red].",
+  "CONDEMNED-CURSED.title": "Maldita",
+  "CONDEMNED-LOOPING.description": "Al inicio de tu turno, esta carta va a tu mano.",
+  "CONDEMNED-LOOPING.title": "Bucle"
+}

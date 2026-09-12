@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bd2nhnfjketx8"]
+
+[ext_resource type="Shader" uid="uid://dcisrb3x7a0xy" path="res://Condemned/scenes/vfx/apply_jinx.gdshader" id="1_mx1et"]
+
+[resource]
+shader = ExtResource("1_mx1et")
+shader_parameter/color = Color(0.2, 0, 0.3, 0.8)
+shader_parameter/progress = 0.0
+shader_parameter/strength = 0.5

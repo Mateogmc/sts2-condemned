@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://bs7s15e70bi1y"]
+
+[ext_resource type="Shader" uid="uid://o1dq7a5kwe7e" path="res://Condemned/scenes/vfx/ConsumeJinx.gdshader" id="1_jxp4m"]
+[ext_resource type="Texture2D" uid="uid://cwcxky4vahi0d" path="res://Condemned/images/textures/perlin_noise_2d-3964866222.png" id="2_2rnto"]
+
+[resource]
+shader = ExtResource("1_jxp4m")
+shader_parameter/progress = 0.0
+shader_parameter/noise_tex = ExtResource("2_2rnto")
+shader_parameter/noise_scale = 4.0
+shader_parameter/edge = 0.15
+shader_parameter/fog_color = Color(0.15, 0.05, 0.2, 1)

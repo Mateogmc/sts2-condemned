@@ -1,0 +1,9 @@
+{
+  "CONDEMNED-CURSED_EYE.description": "Al inicio del combate añade una [red]Obsesión[/red] a tu mano.",
+  "CONDEMNED-CURSED_EYE.flavor": "¿Una maldición, o una bendición?",
+  "CONDEMNED-CURSED_EYE.title": "Ojo Maldito",
+  "CONDEMNED-BLESSED_EYE.description": "Al inicio del combate añade una [green]Obsesión+[/green] a tu mano.",
+  "CONDEMNED-BLESSED_EYE.flavor": "Una verdadera bendición.",
+  "CONDEMNED-BLESSED_EYE.title": "Ojo Bendito",
+  "SEA_GLASS.CONDEMNED-CONDEMNED.title": "Cristal Maldito"
+}
